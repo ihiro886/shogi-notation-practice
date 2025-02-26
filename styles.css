@@ -24,8 +24,34 @@ body {
     height: 50px;
     border: 1px solid black;
     cursor: pointer;
+    position: relative;
 }
 
 #shogi-board td:hover {
     background-color: #f0f0f0;
+}
+
+#shogi-board td:nth-child(4),
+#shogi-board td:nth-child(7) {
+    border-left: 2px solid black;
+}
+
+#shogi-board tr:nth-child(4) td,
+#shogi-board tr:nth-child(7) td {
+    border-top: 2px solid black;
+}
+
+#shogi-board tr:nth-child(4) td:nth-child(4)::after,
+#shogi-board tr:nth-child(4) td:nth-child(7)::after,
+#shogi-board tr:nth-child(7) td:nth-child(4)::after,
+#shogi-board tr:nth-child(7) td:nth-child(7)::after {
+    content: '';
+    position: absolute;
+    top: -1px; /* 交点に表示するための調整 */
+    left: -1px; /* 交点に表示するための調整 */
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
