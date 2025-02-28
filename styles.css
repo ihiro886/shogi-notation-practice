@@ -72,3 +72,6 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
+#shogi-board {
+    background-color: rgb(255, 222, 117);
+}
