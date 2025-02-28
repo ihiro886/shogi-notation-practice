@@ -1,7 +1,9 @@
 // script.js
 const board = document.getElementById('shogi-board');
 const notationDisplay = document.getElementById('current-notation');
-const resultDisplay = document.getElementById('result');
+const resultDisplay = document.createElement('div');
+resultDisplay.id = 'result';
+board.parentNode.insertBefore(resultDisplay, board.nextSibling);
 const kanjiNumbers = ['一', '二', '三', '四', '五', '六', '七', '八', '九'];
 
 // 9×9の盤面を生成
