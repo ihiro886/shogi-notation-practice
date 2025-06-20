@@ -13,8 +13,8 @@
 
 ## 画面イメージ
 
-![アプリ画面例](docs/sample1.png)
-![アプリ盤面例](docs/sample2.png)
+<img src="docs/sample1.png" alt="アプリ画面例1" width="350"/>
+<img src="docs/sample2.png" alt="アプリ画面例2" width="350"/>
 
 ## 使い方
 
